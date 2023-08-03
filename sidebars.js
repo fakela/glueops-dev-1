@@ -23,10 +23,10 @@ const sidebars = {
     {
       type: "category",
       label: "Pre-Deployment Setup",
-      collapsible: false,
+      collapsible: true,
       items: [
-        "predeployment/github-oauth",
-        "predeployment/github-app",
+        "predeployment/create-github-oauth-for-glueops",
+        "predeployment/create-github-app-for-glueops",
       ],
       link: {
         type: "generated-index",
@@ -36,8 +36,22 @@ const sidebars = {
       },
     },
     "glueops-deployment-configuration",
-    'deploy-hello-world-to-glueops',
-    'deploy-docusarus-website-to-glueops'
+    {
+      type: "category",
+      label: "Deploy Applications",
+      collapsible: true,
+      items: [
+        "deploy-applications/deploy-hello-world-to-glueops",
+        "deploy-applications/deploy-docusarus-website-to-glueops",
+        "deploy-applications/deploy-python-app-to-glueops"
+      ],
+      link: {
+        type: "generated-index",
+        title: "Deploy your Applications to GlueOps",
+        description: "You can deploy any application to GlueOps",
+        slug: "/deploy-applications",
+      },
+    },
   ],
 };
 
