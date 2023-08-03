@@ -188,10 +188,6 @@ jobs:
 
 In the `uat-ci.yaml` file add the following content: 
 
-:::info
-Replace `GH_TOKEN` with your secret name.
-:::
-
 ```yaml
 # .github/workflows/uat-ci.yaml
 
@@ -211,6 +207,10 @@ jobs:
       ENV: 'uat'
       CREATE_PR: true
 ```
+:::info
+Replace `GH_TOKEN` with your secret name.
+:::
+
 
 ## Deploy the App and Register Environments
 
@@ -270,6 +270,13 @@ ingress:
         - hostname: python-app-prod.yolo.venkatamutyala.com
 ```
 
+:::important
+Replace the placeholders as follows:
+- Replace `demo-app-1` with your actual repository name.
+- Replace `venkatamutyala.com` with your actual hosting name.
+- Replace `test-80-np.venkata.onglueops.rocks` with the name of your GlueOps cluster provided by GlueOps.
+:::
+
 ###  `stage` Environment Sample Configuration:
 
 Create a file named `values.yaml` in the `envs/stage` folder and add the following content:
@@ -294,6 +301,13 @@ ingress:
         - hostname: python-app-stage.apps.test-80-np.venkata.onglueops.rocks
         - hostname: python-app-stage.yolo.venkatamutyala.com
 ```
+
+:::important
+Replace the placeholders as follows:
+- Replace `demo-app-1` with your actual repository name.
+- Replace `venkatamutyala.com` with your actual hosting name.
+- Replace `test-80-np.venkata.onglueops.rocks` with the name of your GlueOps cluster provided by GlueOps.
+:::
 
 ### `uat` Environment Sample Configuration:
 

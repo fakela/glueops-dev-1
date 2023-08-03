@@ -7,17 +7,19 @@ type: tutorial
 
 # GlueOps Cluster Domains
 
-GlueOps utilizes a deterministic DNS naming convention for your clusters and associated applications, providing a structured and organized way to access your deployed services. Let's break down the components of a GlueOps cluster domain using an example:
-
-```
-order-api.nonprod.antoniostacos.onglueops.com
-```
+GlueOps utilizes a deterministic DNS naming convention for your clusters and associated applications, providing a structured and organized way to access your deployed services. 
 
 :::info
 The cluster domain is automatically provided by GlueOps as part of its service.
 :::
 
-In this example, the domain consists of the following parts:
+Let's break down the components of a GlueOps cluster domain using an example:
+
+```
+order-api.nonprod.antoniostacos.onglueops.com
+```
+
+The domain consists of the following parts:
 
 1. **Subdomain for the Application or Service (`order-api`):** This is the unique subdomain specific to a single application deployment. You can fully customize this name, making it easier to identify both applications and environments.
 
