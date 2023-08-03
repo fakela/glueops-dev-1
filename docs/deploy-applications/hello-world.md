@@ -63,7 +63,7 @@ Change `index.html` to the correct path of your index file.
 
 To enable GitHub Actions to notify our Argo CD of code changes, we need to configure a GitHub token as a repository secret. Here's how you can set it up:
 
-- To get your token secret, go to [https://github.com/settings/tokens](https://github.com/settings/tokens) and click on **Generate new token.**
+- To get your token secret, go to [https://github.com/settings/tokens](https://github.com/settings/tokens) and click on **Generate new token(classic).**
 
 <img width="927" alt="Screenshot 2023-07-28 at 02 51 03" src="https://github.com/GlueOps/glueops-dev/assets/39309699/158bbb62-6710-4933-b076-1efb8d6bdc02"/>
 
@@ -78,14 +78,15 @@ To enable GitHub Actions to notify our Argo CD of code changes, we need to confi
 
 - Click on **New repository secret** to create a new token.
 
-- Add your secret name and place your copied token in the secret input field  and click **Add secret**. 
+<img width="798" alt="Screenshot 2023-08-03 at 01 34 34" src="https://github.com/venkata-tenant-test-1/python-app/assets/39309699/393ab91d-e0fb-4fe9-9e88-792de3ec43b0"/>
 
-<img width="870" alt="Screenshot 2023-07-28 at 02 58 50" src="https://github.com/GlueOps/glueops-dev/assets/39309699/a356b1c6-6040-46f0-9b50-c57a2b606dc2"/>
+- Add your **secret name** and place your copied token in the secret input field and click **Add secret**. Below is the repository secret used for this example
 
+<img width="795" alt="Screenshot 2023-08-03 at 01 37 10" src="https://github.com/venkata-tenant-test-1/python-app/assets/39309699/f2c1b85e-5431-452f-a238-14a35ef2e74b"/>
 
 ## Configure GitHub Workflows for Each Environment
 
-In the `.github/workflows` directory of your application repository, we will add GitHub Actions  workflow files for three environment: `prod-ci.yaml`, `stage-ci.yaml`, and `uat-ci.yaml`.
+In the `.github/workflows` directory of your application repository, we will add GitHub Actions workflow files for our environment: `prod-ci.yaml`, `stage-ci.yaml`, and `uat-ci.yaml`.
 ```
 .
 ├── .github
@@ -105,6 +106,10 @@ Each workflow file uses the `GlueOps/github-workflows/.github/workflows/argocd-t
 ###  `prod-ci.yaml` Environment Sample Configuration:
 
 In the `prod-ci.yaml` file add the following content:
+
+:::info
+Replace `GH_TOKEN` with your secret name.
+:::
 
 ```yaml
 # .github/workflows/prod-ci.yaml
@@ -130,6 +135,11 @@ jobs:
 
 In the `stage-ci.yaml` file add the following content:
 
+:::info
+Replace `GH_TOKEN` with your secret name.
+:::
+
+
 ```yaml
 # .github/workflows/stage-ci.yaml
 
@@ -154,6 +164,11 @@ jobs:
 ###  `uat-ci.yaml` Environment Sample Configuration:
 
 In the `uat-ci.yaml` file add the following content: 
+
+:::info
+Replace `GH_TOKEN` with your secret name.
+:::
+
 
 ```yaml
 # .github/workflows/uat-ci.yaml
@@ -181,7 +196,7 @@ Replace `GH_TOKEN` with the correct secret name if you used a different name for
 
 ## Deploy the App and Register Environments
 
-Next, let's deploy the app and register the specified environments (prod, stage, uat) inside the GlueOps Argo CD. Here's what you need to do:
+Next, deploy the app and register the specified environments (prod, stage, uat) inside the GlueOps Argo CD. Here's what you need to do:
 
 1. Go to the [deployment-configurations](https://github.com/GlueOps/deployment-configurations) repository.
 2. Inside the `app` directory, duplicate one of the example demo apps and rename it to your application's name.

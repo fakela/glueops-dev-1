@@ -43,7 +43,7 @@ if __name__ == '__main__':
 
 
 ## Set Up GitHub Actions for Docker Image Publishing
-GlueOps relies on Docker images to deploy applications. We'll set up GitHub Actions to automatically build and publish a Docker image of your Docusaurus website to GitHub Container Registry (GHCR). Here's how you can do it As a happy path, we have provided this [Custom Action to push Docker images to GitHub Container Registry](https://github.com/marketplace/actions/build-docker-image-and-push-to-ghcr). Here's how you can set it up:
+GlueOps relies on Docker images to deploy applications. We'll set up GitHub Actions to automatically build and publish a Docker image of your Docusaurus website to GitHub Container Registry (GHCR). As a happy path, we have provided this [Custom Action to push Docker images to GitHub Container Registry](https://github.com/marketplace/actions/build-docker-image-and-push-to-ghcr). Here's how you can set it up:
 
 - Create a `.github/workflows` folder.
 - Create a new file named `ghcr.yaml` in the workflows folder.
@@ -85,8 +85,7 @@ Change `index.html` to the correct path of your index file.
 
 To enable GitHub Actions to notify our Argo CD of code changes, we need to configure a GitHub token as a repository secret. Here's how you can set it up:
 
-
-- To get your token secret, go to [https://github.com/settings/tokens](https://github.com/settings/tokens) and click on **Generate new token.**
+- To get your token secret, go to [https://github.com/settings/tokens](https://github.com/settings/tokens) and click on **Generate new token(classic).**
 
 <img width="927" alt="Screenshot 2023-07-28 at 02 51 03" src="https://github.com/GlueOps/glueops-dev/assets/39309699/158bbb62-6710-4933-b076-1efb8d6bdc02"/>
 
@@ -103,13 +102,13 @@ To enable GitHub Actions to notify our Argo CD of code changes, we need to confi
 
 <img width="798" alt="Screenshot 2023-08-03 at 01 34 34" src="https://github.com/venkata-tenant-test-1/python-app/assets/39309699/393ab91d-e0fb-4fe9-9e88-792de3ec43b0"/>
 
-- Add your **secret name** and place your copied token in the secret input field  and click **Add secret**. 
+- Add your **secret name** and place your copied token in the secret input field and click **Add secret**. Below is the repository secret used for this example
 
 <img width="795" alt="Screenshot 2023-08-03 at 01 37 10" src="https://github.com/venkata-tenant-test-1/python-app/assets/39309699/f2c1b85e-5431-452f-a238-14a35ef2e74b"/>
 
 ## Configure GitHub Workflows for Each Environment
 
-In the `.github/workflows` directory of your application repository, we will add GitHub Actions workflow files for three environment: `prod-ci.yaml`, `stage-ci.yaml`, and `uat-ci.yaml`.
+In the `.github/workflows` directory of your application repository, we will add GitHub Actions workflow files for our environment: `prod-ci.yaml`, `stage-ci.yaml`, and `uat-ci.yaml`.
 
 ```
 .
@@ -215,7 +214,7 @@ jobs:
 
 ## Deploy the App and Register Environments
 
-Next, let's deploy the app and register the specified environments (prod, stage, uat) inside the GlueOps Argo CD. Here's what you need to do:
+Next, deploy the app and register the specified environments (prod, stage, uat) inside the GlueOps Argo CD. Here's what you need to do:
 
 1. Go to the [deployment-configurations](https://github.com/GlueOps/deployment-configurations) repository.
 2. Inside the `app` directory, duplicate one of the example demo apps and rename it to your repository name.

@@ -111,7 +111,7 @@ To set up your `deployment-configurations` repository:
 │       ├── previews
 │       ├── prod
 │       ├── stage
-│       └── uat
+│      └── uat
 ```
 
 :::tip
