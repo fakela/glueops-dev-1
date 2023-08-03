@@ -8,7 +8,7 @@ jobs:
   update-tags:
     uses: GlueOps/github-workflows/.github/workflows/argocd-tags-ci.yml@main
     secrets:
-      GH_TOKEN: ${{ secrets.DOC_TOKEN }}
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
     with:
       STACK_REPO: 'deployment-configurations'
       ENV: 'prod'
