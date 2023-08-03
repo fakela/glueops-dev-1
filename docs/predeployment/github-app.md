@@ -1,5 +1,5 @@
 ---
-id: github-app
+id: create-github-app-for-glueops
 title: Create GitHub App
 type: tutorial
 ---
@@ -123,7 +123,7 @@ To complete the GitHub App setup, you need to install the GitHub App in your org
 <img width="1032" alt="Screenshot 2023-07-28 at 01 19 29" src="https://github.com/GlueOps/glueops-dev/assets/39309699/8d86f1b7-d91d-468f-a948-78377be2aff0"/>
 
 :::info
-From the URL would be `https://github.com/organizations/venkata-tenant-test-1/settings/installations/40119310` the GitHub App Installation ID would be `40119310`.
+From the URL `https://github.com/organizations/venkata-tenant-test-1/settings/installations/40119310` the GitHub App Installation ID would be `40119310`.
 :::
 
 ## Retrieving values

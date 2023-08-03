@@ -101,30 +101,39 @@ To set up your `deployment-configurations` repository:
 
 1. Create a new repository using the provided [template](https://github.com/new?template_name=deployment-configurations&template_owner=GlueOps) in your GitHub organization.
 
-2. Replace the sample application names (`front-end-antonios-tacos` and `back-end-antonios-tacos`) with the names of your applications that you want to deploy.
+2. In the `app` directory, duplicate one of the example demo apps and rename it to your repository name. For example, if you repository name is _neptune_ then replace your application name to _neptune_.
 
-:::info
-The names of each directory _must_ match the names of the associated application repositories containing the application code.
+```
+├── neptune
+│   ├── base
+│   │   └── base-values.yaml
+│   └── envs
+│       ├── previews
+│       ├── prod
+│       ├── stage
+│       └── uat
+```
+
+:::tip
+You can add new directories for each additional application you want to deploy.
 :::
 
-3. Under the `apps` directory, add new directories for each additional application you want to deploy.
+3. In the `base-values.yaml` file inside the `base` directory, update the information to fit your application. 
 
-4. Within each application directory, create subdirectories to match the environments you want to deploy to (e.g., `stage`, `prod`, `uat`).
+4. Update the `values.yaml` file in the enviroments (e.g., `stage`, `prod`, `uat`) you want to deploy. Change the image tag, hostnames, and other necessary details to match your application and GlueOps configuration.
 
 :::info
-There is no maximum number of directories per environment. You can choose to have environments like stage, prod, and uat, or just stage and prod based on your needs.
+There is no maximum number of directories per environment. You can choose to have environments like `stage`, `prod`, and `uat`, or just `stage` and `prod` based on your needs.
 :::
 
-5. Customize each environment's `values.yaml` file within the respective environment directories with environment-specific configurations.
-
-6. Repeat the above steps for each application and environment you want to manage in your repository.
+5. Repeat the above steps for each application and environment you want to manage in your repository.
 
 For example, if you want to deploy the applications `data-api` in `stage` and `prod` environments and `commerce-front-end` in `uat` and `prod` environments, the resulting directory structure would look like this:
 
 ```sh
 deployment-configurations
 ├── apps
-│   ├── back-end-antonios-tacos
+│   ├── data-api
 │   │   ├── base
 │   │   │   └── base-values.yaml
 │   │   └── envs
@@ -138,9 +147,7 @@ deployment-configurations
 │   │       │   └── values.yaml
 │   │       ├── stage
 │   │       │   └── values.yaml
-│   │       └── uat
-│   │           └── values.yaml
-│   └── front-end-antonios-tacos
+│   └── commerce-front-end
 │       ├── base
 │       │   └── base-values.yaml
 │       └── envs
@@ -151,8 +158,6 @@ deployment-configurations
 │           │       └── 1
 │           │           └── values.yaml
 │           ├── prod
-│           │   └── values.yaml
-│           ├── stage
 │           │   └── values.yaml
 │           └── uat
 │               └── values.yaml

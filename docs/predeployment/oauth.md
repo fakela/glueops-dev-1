@@ -1,5 +1,5 @@
 ---
-id: github-oauth
+id: create-github-oauth-for-glueops
 title: Create GitHub OAuth App
 type: tutorial
 ---
@@ -39,7 +39,7 @@ You can also include the cluster identifier, in this case `nonprod` so this will
 :::
 
 4. **Homepage URL**: Specify the homepage URL for your OAuth app. The homepage URL contains the following
-    - The URL suffix `https://dex`. Where `dex` is the service we manage for the customer.
+    - The URL suffix `https://dex`. Where `dex` is the service we manage.
     - The application name. In this case `order-api-nonprod`
     - The subdomain identifying your organization. In this case `antoniostacos`
     - The core domain for GlueOps services `onglueops.com` 
