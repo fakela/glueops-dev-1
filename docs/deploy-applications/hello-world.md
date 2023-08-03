@@ -130,15 +130,13 @@ jobs:
       ENV: 'prod'
       CREATE_PR: true
 ```
-
-###  `stage-ci.yaml` Environment Sample Configuration:
-
-In the `stage-ci.yaml` file add the following content:
-
 :::info
 Replace `GH_TOKEN` with your secret name.
 :::
 
+###  `stage-ci.yaml` Environment Sample Configuration:
+
+In the `stage-ci.yaml` file add the following content:
 
 ```yaml
 # .github/workflows/stage-ci.yaml
@@ -160,15 +158,13 @@ jobs:
       ENV: 'stage'
       CREATE_PR: false
 ```
-
-###  `uat-ci.yaml` Environment Sample Configuration:
-
-In the `uat-ci.yaml` file add the following content: 
-
 :::info
 Replace `GH_TOKEN` with your secret name.
 :::
 
+###  `uat-ci.yaml` Environment Sample Configuration:
+
+In the `uat-ci.yaml` file add the following content: 
 
 ```yaml
 # .github/workflows/uat-ci.yaml
@@ -191,7 +187,7 @@ jobs:
 ```
 
 :::info
-Replace `GH_TOKEN` with the correct secret name if you used a different name for the GitHub token secret.
+Replace `GH_TOKEN` with your secret name.
 :::
 
 ## Deploy the App and Register Environments
@@ -252,6 +248,13 @@ ingress:
         - hostname: demo-app-1-prod.yolo.venkatamutyala.com
 ```
 
+:::important
+Replace the placeholders as follows:
+- Replace `demo-app-1` with your actual repository name.
+- Replace `venkatamutyala.com` with your actual hosting name.
+- Replace `test-80-np.venkata.onglueops.rocks` with the name of your GlueOps cluster provided by GlueOps.
+:::
+
 ###  `stage` Environment Sample Configuration:
 
 Create a file named `values.yaml` in the `envs/stage` folder and add the following content:
@@ -277,6 +280,13 @@ ingress:
         - hostname: demo-app-1-stage.apps.test-80-np.venkata.onglueops.rocks
         - hostname: demo-app-1-stage.yolo.venkatamutyala.com
 ```
+
+:::important
+Replace the placeholders as follows:
+- Replace `demo-app-1` with your actual repository name.
+- Replace `venkatamutyala.com` with your actual hosting name.
+- Replace `test-80-np.venkata.onglueops.rocks` with the name of your GlueOps cluster provided by GlueOps.
+:::
 
 ### `uat` Environment Sample Configuration:
 

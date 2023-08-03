@@ -2,7 +2,7 @@
   "unversionedId": "glueops-cluster-domain",
   "id": "glueops-cluster-domain",
   "title": "Cluster Domains",
-  "description": "GlueOps utilizes a deterministic DNS naming convention for your clusters and associated applications, providing a structured and organized way to access your deployed services. Let's break down the components of a GlueOps cluster domain using an example:",
+  "description": "GlueOps utilizes a deterministic DNS naming convention for your clusters and associated applications, providing a structured and organized way to access your deployed services.",
   "source": "@site/docs/cluster-domains.md",
   "sourceDirName": ".",
   "slug": "/glueops-cluster-domain",

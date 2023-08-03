@@ -29,14 +29,14 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "/workspace/glueops-dev/sidebars.js",
+          "sidebarPath": "/workspace/glueops-dev-1/sidebars.js",
           "editUrl": "https://github.com/GlueOps/glueops-dev",
           "sidebarCollapsed": false
         },
         "theme": {
           "customCss": [
-            "/workspace/glueops-dev/src/css/custom.css",
-            "/workspace/glueops-dev/src/css/helpers.css"
+            "/workspace/glueops-dev-1/src/css/custom.css",
+            "/workspace/glueops-dev-1/src/css/helpers.css"
           ]
         },
         "sitemap": {
