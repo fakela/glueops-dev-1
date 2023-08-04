@@ -1,4 +1,23 @@
-# Test Deployment
-FROM httpd:2.4.57
+# Use a newer version of Node.js as the base image
+FROM node:16
 
-COPY src/pages/index.tsx /usr/local/apache2/htdocs/src/pages/index.tsx
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy package files
+COPY package.json yarn.lock /app/
+
+# Install dependencies
+RUN yarn install
+
+# Copy the Docusaurus app files into the container
+COPY . /app/
+
+# Build the Docusaurus app (optional)
+RUN yarn build
+
+# Expose the port (optional)
+EXPOSE 3000
+
+# Start the Docusaurus app
+CMD ["yarn", "start"]
