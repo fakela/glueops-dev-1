@@ -9,7 +9,7 @@ jobs:
     uses: GlueOps/github-workflows/.github/workflows/argocd-tags-ci.yml@main
     if: github.event.pull_request.merged == true
     secrets:
-      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      GH_TOKEN: ${{ secrets.GH_TOKEN1 }}
     with:
       STACK_REPO: 'deployment-configurations'
       ENV: 'stage'
