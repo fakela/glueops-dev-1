@@ -1,4 +1,4 @@
 # Test Deployment
 FROM httpd:2.4.57
 
-COPY --from=build /app/build /usr/local/apache2/htdocs/
+COPY build/index.html /app/build/usr/local/apache2/htdocs/build/index.html
