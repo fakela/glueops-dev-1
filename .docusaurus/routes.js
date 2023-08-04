@@ -4,52 +4,52 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 export default [
   {
     path: '/__docusaurus/debug',
-    component: ComponentCreator('/__docusaurus/debug', 'f4e'),
+    component: ComponentCreator('/__docusaurus/debug', '381'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/config',
-    component: ComponentCreator('/__docusaurus/debug/config', 'fa4'),
+    component: ComponentCreator('/__docusaurus/debug/config', 'ae0'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/content',
-    component: ComponentCreator('/__docusaurus/debug/content', 'c7e'),
+    component: ComponentCreator('/__docusaurus/debug/content', '782'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/globalData',
-    component: ComponentCreator('/__docusaurus/debug/globalData', 'a6a'),
+    component: ComponentCreator('/__docusaurus/debug/globalData', 'afa'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/metadata',
-    component: ComponentCreator('/__docusaurus/debug/metadata', 'd38'),
+    component: ComponentCreator('/__docusaurus/debug/metadata', '591'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/registry',
-    component: ComponentCreator('/__docusaurus/debug/registry', 'cfe'),
+    component: ComponentCreator('/__docusaurus/debug/registry', '2a8'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/routes',
-    component: ComponentCreator('/__docusaurus/debug/routes', '5ea'),
+    component: ComponentCreator('/__docusaurus/debug/routes', 'e85'),
     exact: true
   },
   {
     path: '/markdown-page',
-    component: ComponentCreator('/markdown-page', '9f1'),
+    component: ComponentCreator('/markdown-page', '68c'),
     exact: true
   },
   {
     path: '/upgrade',
-    component: ComponentCreator('/upgrade', '8e0'),
+    component: ComponentCreator('/upgrade', '169'),
     exact: true
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'fdb'),
+    component: ComponentCreator('/docs', '693'),
     routes: [
       {
         path: '/docs/deploy-applications',
@@ -115,7 +115,7 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', '7aa'),
+    component: ComponentCreator('/', '882'),
     exact: true
   },
   {

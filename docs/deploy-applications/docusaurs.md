@@ -235,6 +235,13 @@ ingress:
         - hostname: docusarus-website-prod.yolo.venkatamutyala.com
 ```
 
+:::important
+Replace the placeholders as follows:
+- Replace `docusarus-website` with your actual repository name.
+- Replace `venkatamutyala.com` with your actual hosting name.
+- Replace `test-80-np.venkata.onglueops.rocks` with the name of your GlueOps cluster provided by GlueOps.
+:::
+
 ###  `stage` Environment Sample Configuration:
 
 Create a file named `values.yaml` in the `envs/stage` folder and add the following content:
@@ -259,6 +266,13 @@ ingress:
         - hostname: docusarus-website-stage.apps.test-80-np.venkata.onglueops.rocks
         - hostname: docusarus-website-stage.yolo.venkatamutyala.com
 ```
+
+:::important
+Replace the placeholders as follows:
+- Replace `docusarus-website` with your actual repository name.
+- Replace `venkatamutyala.com` with your actual hosting name.
+- Replace `test-80-np.venkata.onglueops.rocks` with the name of your GlueOps cluster provided by GlueOps.
+:::
 
 ### `uat` Environment Sample Configuration:
 
