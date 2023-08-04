@@ -26,10 +26,6 @@
               "sidebar": "main"
             },
             {
-              "id": "getting-started",
-              "path": "/docs/getting-started"
-            },
-            {
               "id": "glueops-cluster-domain",
               "path": "/docs/glueops-cluster-domain",
               "sidebar": "main"

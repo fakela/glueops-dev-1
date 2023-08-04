@@ -11,6 +11,8 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+
+
 .callout:hover {
   background: var(--ifm-background-surface-color-dark);
   text-decoration: none;
@@ -130,11 +132,13 @@ span.slogan__highlight {
   margin: 0;
   font-size: 0.875rem;
   line-height: 1.25rem;
+  margin-right: 2.5rem
 }
 .reaching_out__link_container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-top: 1.5rem;
+  margin-right: 2.5rem
 }
 .reaching_out__link_container a {
   align-items: center;
@@ -142,6 +146,7 @@ span.slogan__highlight {
   display: flex;
   font-size: 0.875rem;
   line-height: 1.25rem;
+  margin-right: 2.5rem
 }
 
 @media only screen and (min-width: 1024px) {

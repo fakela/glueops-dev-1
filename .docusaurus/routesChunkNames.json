@@ -56,7 +56,7 @@
     },
     "config": "config---upgrade-5-e-9-a0a"
   },
-  "/docs-238": {
+  "/docs-693": {
     "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
       "plugin": "plugin---docs-7-f-9-8c4"
@@ -78,10 +78,6 @@
   "/docs/deploy-applications/deploy-python-app-to-glueops-4f6": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-deploy-applications-deploy-python-app-to-glueopsd-59-a83"
-  },
-  "/docs/getting-started-ef6": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-getting-startedd-58-f94"
   },
   "/docs/glueops-cluster-domain-e59": {
     "__comp": "__comp---theme-doc-item-178-a40",
