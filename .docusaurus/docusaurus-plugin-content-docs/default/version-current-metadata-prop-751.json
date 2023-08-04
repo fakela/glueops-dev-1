@@ -96,11 +96,6 @@
       "description": "In this tutorial, we will walk you through the process of deploying a simple Python application built with Flask with GlueOps.",
       "sidebar": "main"
     },
-    "getting-started": {
-      "id": "getting-started",
-      "title": "getting-started",
-      "description": ""
-    },
     "glueops-cluster-domain": {
       "id": "glueops-cluster-domain",
       "title": "Cluster Domains",

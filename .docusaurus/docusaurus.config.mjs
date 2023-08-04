@@ -92,10 +92,18 @@ export default {
           "label": "Docs"
         },
         {
-          "type": "doc",
-          "docId": "getting-started",
-          "position": "left",
-          "label": "Get Started"
+          "href": "https://aws.amazon.com/marketplace/pp/prodview-mfwjl2qdvhaes?sr=0-1&ref_=beagle&applicationId=AWSMPContessa",
+          "aria-label": "Purchase DataOps on Amazon Marketplace",
+          "position": "right",
+          "title": "Purchase DataOps on Amazon Marketplace",
+          "label": "Purchase DataOps on Amazon Marketplace"
+        },
+        {
+          "href": "https://aws.amazon.com/marketplace/pp/prodview-soaz2d3nlms6k?sr=0-2&ref_=beagle&applicationId=AWSMPContessa",
+          "aria-label": "Purchase DevOps on Amazon Marketplace",
+          "position": "right",
+          "title": "Purchase DevOps on Amazon Marketplace",
+          "label": "Purchase DevOps on Amazon Marketplace"
         },
         {
           "href": "https://github.com/GlueOps/glueops-dev",
@@ -123,14 +131,6 @@ export default {
             {
               "label": "Docs",
               "to": "#"
-            },
-            {
-              "label": "Purchase DataOps on Amazon Marketplace",
-              "to": "https://aws.amazon.com/marketplace/pp/prodview-mfwjl2qdvhaes?sr=0-1&ref_=beagle&applicationId=AWSMPContessa"
-            },
-            {
-              "label": "Purchase DevOps on Amazon Marketplace",
-              "to": "https://aws.amazon.com/marketplace/pp/prodview-soaz2d3nlms6k?sr=0-2&ref_=beagle&applicationId=AWSMPContessa"
             }
           ]
         }

@@ -49,7 +49,7 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '238'),
+    component: ComponentCreator('/docs', '693'),
     routes: [
       {
         path: '/docs/deploy-applications',
@@ -74,11 +74,6 @@ export default [
         component: ComponentCreator('/docs/deploy-applications/deploy-python-app-to-glueops', '4f6'),
         exact: true,
         sidebar: "main"
-      },
-      {
-        path: '/docs/getting-started',
-        component: ComponentCreator('/docs/getting-started', 'ef6'),
-        exact: true
       },
       {
         path: '/docs/glueops-cluster-domain',

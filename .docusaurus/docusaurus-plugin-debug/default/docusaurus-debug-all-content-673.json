@@ -100,21 +100,6 @@
               }
             },
             {
-              "unversionedId": "getting-started",
-              "id": "getting-started",
-              "title": "getting-started",
-              "description": "",
-              "source": "@site/docs/getting-started.md",
-              "sourceDirName": ".",
-              "slug": "/getting-started",
-              "permalink": "/docs/getting-started",
-              "draft": false,
-              "editUrl": "https://github.com/GlueOps/glueops-dev/docs/getting-started.md",
-              "tags": [],
-              "version": "current",
-              "frontMatter": {}
-            },
-            {
               "unversionedId": "glueops-cluster-domain",
               "id": "glueops-cluster-domain",
               "title": "Cluster Domains",

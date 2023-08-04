@@ -89,30 +89,21 @@ const config = {
             position: "left",
             label: "Docs",
           },
+          // },
           {
-            type: "doc",
-            docId: "getting-started",
-            position: "left",
-            label: "Get Started",
+            href: "https://aws.amazon.com/marketplace/pp/prodview-mfwjl2qdvhaes?sr=0-1&ref_=beagle&applicationId=AWSMPContessa",
+            "aria-label": "Purchase DataOps on Amazon Marketplace",
+            position: "right",
+            title: "Purchase DataOps on Amazon Marketplace",
+            label: "Purchase DataOps on Amazon Marketplace",
           },
-      
-          // },
-          // {
-          //   href: "https://nx.dev",
-          //   className: "header-nxdev-link",
-          //   "aria-label": "Nx documentation",
-          //   position: "right",
-          //   title: "Check Nx",
-          //   label: "Nx",
-          // },
-          // {
-          //   href: "https://nx.app",
-          //   className: "header-nxdev-link",
-          //   "aria-label": "Nx Cloud",
-          //   position: "right",
-          //   title: "Check Nx Cloud",
-          //   label: "Nx Cloud",
-          // },
+          {
+            href: "https://aws.amazon.com/marketplace/pp/prodview-soaz2d3nlms6k?sr=0-2&ref_=beagle&applicationId=AWSMPContessa",
+            "aria-label": "Purchase DevOps on Amazon Marketplace",
+            position: "right",
+            title: "Purchase DevOps on Amazon Marketplace",
+            label: "Purchase DevOps on Amazon Marketplace",
+          },
           // {
           //   href: "https://nrwl.io",
           //   className: "header-nrwlio-link",
@@ -154,14 +145,6 @@ const config = {
               {
                 label: "Docs",
                 to: "#",
-              },
-              {
-                label: "Purchase DataOps on Amazon Marketplace",
-                to: "https://aws.amazon.com/marketplace/pp/prodview-mfwjl2qdvhaes?sr=0-1&ref_=beagle&applicationId=AWSMPContessa",
-              },
-              {
-                label: "Purchase DevOps on Amazon Marketplace",
-                to: "https://aws.amazon.com/marketplace/pp/prodview-soaz2d3nlms6k?sr=0-2&ref_=beagle&applicationId=AWSMPContessa",
               },
             ],
           },
