@@ -1,6 +1,24 @@
-# Exclude lock files
-yarn.lock
-package-lock.json
+# macOS
+.DS_Store
 
-# Exclude the node_modules directory
-node_modules
+# Visual Studio Code
+.vscode/
+
+# IDEA
+.idea/
+
+# Editor backup files
+*~
+
+# MkDocs build output
+public/
+
+# Dependencies
+/node_modules
+
+# Production
+/build
+
+# Generated files
+.docusaurus
+.cache-loader
