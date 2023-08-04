@@ -348,7 +348,7 @@ Replace the placeholders as follows:
 
 Create a pull request (PR) to trigger the GitHub Action you set up for publishing the Docker image based on the latest code changes. The platform will automatically spin up a new environment and deploy the application.
 
-<img width="953" alt="Screenshot 2023-08-01 at 17 05 26" src="https://github.com/venkata-tenant-test-1/python-app/assets/39309699/bf80dae2-5605-419d-9a2d-f4ccdc88e539"/>
+<img width="700" alt="Screenshot 2023-08-01 at 17 05 26" src="https://github.com/venkata-tenant-test-1/python-app/assets/39309699/bf80dae2-5605-419d-9a2d-f4ccdc88e539"/>
 
 To view the app click on the preview URL. You can check the status of the deployment on Argos CD, which will show metrics, logs, and more. The QR code will also lead you to the preview URL.
 
@@ -364,9 +364,9 @@ The staging enviroment is automatically deployed, to check your application:
 
 ### Deploying to `prod` and `uat` Environments
 
-1. To deploy your application to the prod and UAT environments, you need to create a release in your application's repository (e.g., v0.1.0, v1.0.0, etc.). This release will mark the specific version of your application that you want to deploy to these environments.
+1. To deploy your application to the prod and UAT environments, you need to create a [release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository in your application's repository (e.g., v0.1.0, v1.0.0, etc.). This release will mark the specific version of your application that you want to deploy to these environments.
 
-2. Upon creating the release, GitHub will automatically generate pull requests into the deployment-configurations repository. These pull requests will contain the necessary changes for the prod and UAT environments, located in the `envs/prod` and `envs/uat` directories, respectively.
+2. Upon creating the release, GitHub will automatically generate pull requests into your deployment-configurations repository. These pull requests will contain the necessary changes for the prod and UAT environments, located in the `envs/prod` and `envs/uat` directories, respectively.
 
 3. Review and merge the pull requests in the deployment-configurations repository. This will trigger the deployment process to both the `prod` and `uat` environments.
 

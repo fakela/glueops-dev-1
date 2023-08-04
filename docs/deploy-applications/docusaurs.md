@@ -327,9 +327,9 @@ The staging enviroment is automatically deployed, to check your application:
 
 ### Deploying to `prod` and `uat` Environments
 
-1. To deploy your application to the prod and UAT environments, you need to create a release in your application's repository (e.g., v0.1.0, v1.0.0, etc.). This release will mark the specific version of your application that you want to deploy to these environments.
+1. To deploy your application to the prod and UAT environments, you need to create a [release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository in your application's repository (e.g., v0.1.0, v1.0.0, etc.). This release will mark the specific version of your application that you want to deploy to these environments.
 
-2. Upon creating the release, GitHub will automatically generate pull requests into the deployment-configurations repository. These pull requests will contain the necessary changes for the prod and UAT environments, located in the `envs/prod` and `envs/uat` directories, respectively.
+2. Upon creating the release, GitHub will automatically generate pull requests into your deployment-configurations repository. These pull requests will contain the necessary changes for the prod and UAT environments, located in the `envs/prod` and `envs/uat` directories, respectively.
 
 3. Review and merge the pull requests in the deployment-configurations repository. This will trigger the deployment process to both the `prod` and `uat` environments.
 
